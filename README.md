@@ -23,7 +23,7 @@ Think of RAG as an **AI pipeline** that reduces the hallucination of LLMs by con
 
 To make things practical, I decided to **build a RAG model based on my resume and personal data**.
 
-The result? **MICROBOT** — a personal AI assistant that:
+The result? **MICROBOT** - a personal AI assistant that:
 
 * Retrieves relevant chunks from my resume
 * Parses the data to answer queries about my skills, projects, and background
@@ -38,7 +38,7 @@ And MICROBOT will respond instantly with accurate, grounded answers.
 
 ## Architecture 
 <img width="1280" height="1600" alt="image" src="https://github.com/user-attachments/assets/f1a6568d-1e8f-4c44-956f-0addea88a772" />
-Image Credits: KODEKLOUD
+**Image Credits: KODEKLOUD**
 
 ## The Pipeline Behind MICROBOT
 
@@ -63,21 +63,21 @@ Why chunking matters:
 
 ### 3️⃣ Embeddings: Turning Text into Vectors
 
-I used the **All-MiniLM-L6-v2 model** to convert chunks into **embeddings** — numerical representations of text.
+I used the **All-MiniLM-L6-v2 model** to convert chunks into **embeddings** - numerical representations of text.
 
 This step makes the text **searchable in vector space**.
 So when a user query comes in, the system can quickly find **similar embeddings** (aka the most relevant chunks).
 
 ### 4️⃣ Vector Store & Retriever
 
-I stored these embeddings in **ChromaDB** — an open-source **vector store** optimized for similarity search.
+I stored these embeddings in **ChromaDB** - an open-source **vector store** optimized for similarity search.
 
 * **Retriever**: Acts as the “search engine” of the pipeline.
 * It finds the top chunks that best match the user query.
 
 Alternative: FAISS (another popular open-source vector store).
 
-### 5️⃣ Query + Context + Prompt → LLM
+### 5️⃣ Query + Context + Prompt -> LLM
 
 Here’s where the magic happens:
 
@@ -115,13 +115,9 @@ The main advantage? **Optimization of responses by grounding them in trusted dat
 RAG is the **bridge between static knowledge in LLMs and dynamic, real-world information**.
 By combining **retrieval, chunking, embeddings, vector stores, and optimized text generation**, we can build AI systems that are not only smart but also **trustworthy**.
 
-For me, building **MICROBOT** was more than just a fun project — it’s a way to **showcase my skills in action**.
+For me, building **MICROBOT** was more than just a fun project, it’s a way to **showcase my skills in action**.
 
 If you’re curious about me or want to build your own RAG-powered assistant, feel free to **ping MICROBOT**.
 
-The future of AI isn’t just about models — it’s about **data ingestion, retrieval, and grounding.**
-And RAG is leading the way.
-
-🔥 This version now includes **all the keywords naturally** (data ingestion, pipeline, parsing, chunking, embeddings, retriever, vector store, hallucination reduction, query, context, prompt, optimization, text generation).
-
-Do you also want me to **add a simple diagram/flowchart** of the RAG pipeline (User Query → Retriever → Vector Store → Context → LLM → Response) so it’s visually appealing on Medium?
+The future of AI isn’t just about models, it’s about **data ingestion, retrieval, and grounding.**
+And **RAG** is leading the way.
